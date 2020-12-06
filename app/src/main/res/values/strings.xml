@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Travel Photos</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="todo">TODO</string>
+    <string name="photo_name">Photo Name</string>
+    <string name="photo_date">Photo Date</string>
+    <string name="photo_place">Photo Place</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/selectimage"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="selectimage"
+        app:layout_constraintBottom_toTopOf="@+id/photoname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/selectedimage"
+        android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/photoname"
+        style="@android:style/Widget.DeviceDefault.EditText"
+        android:layout_width="225dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="@string/photo_name"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/photoplace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectimage"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/photoyear"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="229dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="64dp"
+        android:ems="10"
+        android:hint="@string/photo_date"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoplace"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/photoplace"
+        style="@android:style/Widget.AutoCompleteTextView"
+        android:layout_width="229dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="31dp"
+        android:ems="10"
+        android:hint="@string/photo_place"
+        android:inputType="textPersonName"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/photoyear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoname"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="104dp"
+        android:onClick="save"
+        android:text="@string/save"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoyear" />
+</androidx.constraintlayout.widget.ConstraintLayout>
